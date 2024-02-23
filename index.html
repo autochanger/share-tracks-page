@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+<!-- Link to CSS stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- Link to JavaScript file -->
+<script src="js/script.js"></script>
+</head>
+<body>
+
+<!--<div style=
+"text-align:center;
+padding-right:80px;font-size:48px;">
+<p>SHARE YOUR <br>
+TRACKS <br>
+ WITH<br>
+<span style="font-family:roboto;"> FRIENDS </span></p></div>-->
+
+    <div id="player">
+        <h2>Now Playing</h2>
+        <hr>
+        <div id="album-art" style="text-align: center;"><img src="data/images/cover 1.png" width="200px"></div>
+        <h3 id="title">Track Title</h3>
+        <audio id="audio" controls></audio>
+
+        <h2>Playlist</h2>
+        <ul id="playlist"></ul>
+    </div>
+
+  
+
+
+
+
+   <script>
+        // Add your JavaScript here
+  var audio = document.getElementById('audio');
+  var albumArt = document.getElementById('album-art');
+  var playlist = document.getElementById('playlist');
+  var musicIndex = 0;
+  var tracks = [
+      {src: 'data/musics/song 1.mp3', art: 'art1.jpg', title: 'D$N'},
+      {src: 'data/musics/song 2.mp3', art: 'art2.jpg', title: 'Da Vinci Language'},
+      {src: 'data/musics/song 3.mp3', art: 'art3.jpg', title: 'Bellair (Dollar$)'},
+      {src: 'data/musics/song 4.mp3', art: 'art3.jpg', title: 'Electromix'},
+      {src: 'data/musics/song 5.mp3', art: 'art3.jpg', title: 'Emotions'},
+      {src: 'data/musics/song 6.mp3', art: 'art3.jpg', title: 'Indica'},
+      {src: 'data/musics/song 7.mp3', art: 'art3.jpg', title: 'Money'}, 
+      {src: 'data/musics/song 9.mp3', art: 'art3.jpg', title: 'Hola'},
+      // Add more tracks as needed
+  ];
+
+  function playTrack(index) {
+      audio.src = tracks[index].src;
+      albumArt.style.backgroundImage = 'url(' + tracks[index].art + ')';
+      document.getElementById('title').innerText = tracks[index].title;
+      audio.play();
+  }
+
+  function loadPlaylist() {
+      tracks.forEach(function(track, index) {
+          var li = document.createElement('li');
+          li.innerText = track.title;
+          li.onclick = function() {
+              playTrack(index);
+          };
+          playlist.appendChild(li);
+      });
+  }
+
+  loadPlaylist();
+  playTrack(musicIndex);
+
+  /// other scripts here //////////////////
+ 
+
+  
+    </script>
+
+
+</body>
+</html>
