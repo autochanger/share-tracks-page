@@ -84,16 +84,7 @@ body {
 .song {
             cursor: pointer;
         }
-.addon{
-     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    max-width:100%;
-    float:right;
-}
+
 
 
 /* nav bar css here */
