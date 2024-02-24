@@ -36,12 +36,28 @@ padding-right:;font-size:px;">
 	<!-- Player code here-->
         <h2>Now Playing</h2>
         <hr>
+	
         <div id="album-art" style="text-align: center;"><img src="data/images/cover 1.png" width="200px"></div>
         <h3 id="title">Track Title</h3>
+		  
+	        <audio controls id="audioPlayer">
+	            Your browser does not support the audio element.
+	        </audio>
         
 
         <h2>Playlist</h2>
         <ul id="playlist"></ul>
+
+
+	
+	        <h1>Trending tracks</h1>
+		        <ul id="trending_tracks">
+	            <li class="song" data-src="data/musics/song 3.mp3">Song 1</li>
+	            <li class="song" data-src="data/musics/song 4.mp3">Song 2</li>
+	            <li class="song" data-src="data/musics/song 5.mp3">Song 3</li>
+		    <li class="song" data-src="data/musics/song 6.mp3">Song 4</li>
+	            <li class="song" data-src="data/musics/song 7.mp3">Song 5</li>
+	        </ul>
 </div>
 	
 
@@ -51,18 +67,8 @@ padding-right:;font-size:px;">
 	TRACKS <br>
 	 WITH<br>
 	<span style="font-family:roboto;color:blue;"> FRIENDS </span></i>
-	  
-	        <h1>Trending tracks</h1>
-	        <audio controls id="audioPlayer">
-	            Your browser does not support the audio element.
-	        </audio>
-	        <ul id="trending_tracks">
-	            <li class="song" data-src="data/musics/song 3.mp3">Song 1</li>
-	            <li class="song" data-src="data/musics/song 4.mp3">Song 2</li>
-	            <li class="song" data-src="data/musics/song 5.mp3">Song 3</li>
-		    <li class="song" data-src="data/musics/song 6.mp3">Song 4</li>
-	            <li class="song" data-src="data/musics/song 7.mp3">Song 5</li>
-	        </ul>
+
+
 	   
 	    <script src="js/player.js"></script>
 	        
