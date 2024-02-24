@@ -22,42 +22,45 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <!-- Link to JavaScript file -->
 
-    <script src="js/player.js"></script>
 </head>
 <body>
-
+    <div id="player">
 <div style=
 "text-align:center;
 padding-right:80px;font-size:48px;">
-<p>SHARE YOUR <br>
-TRACKS <br>
- WITH<br>
-<span style="font-family:roboto;"> FRIENDS </span></p></div>
-    <h1>Trending tracks</h1>
-    <section class="add-on">
+<p></p></div>
+    <h1></h1>
+<section class="add-on">
          <div id="player">
-        <h1>Simple Music Player</h1>
-        <audio controls id="audioPlayer">
-            Your browser does not support the audio element.
-        </audio>
-        <ul id="playlist">
-            <li class="song" data-src="data/musics/song 3.mp3">Song 1</li>
-            <li class="song" data-src="data/musics/song 4.mp3">Song 2</li>
-            <li class="song" data-src="data/musics/song 5.mp3">Song 3</li>
-	    <li class="song" data-src="data/musics/song 6.mp3">Song 4</li>
-            <li class="song" data-src="data/musics/song 7.mp3">Song 5</li>
-        </ul>
-    </div>
-    <script src="player.js"></script>
-        
-    </section>
+		 
+			 SHARE YOUR <br>
+	TRACKS <br>
+	 WITH<br>
+	<span style="font-family:roboto;"> FRIENDS </span>
+	        <h1>Trending tracks</h1>
+	        <audio controls id="audioPlayer">
+	            Your browser does not support the audio element.
+	        </audio>
+	        <ul id="trending_tracks">
+	            <li class="song" data-src="data/musics/song 3.mp3">Song 1</li>
+	            <li class="song" data-src="data/musics/song 4.mp3">Song 2</li>
+	            <li class="song" data-src="data/musics/song 5.mp3">Song 3</li>
+		    <li class="song" data-src="data/musics/song 6.mp3">Song 4</li>
+	            <li class="song" data-src="data/musics/song 7.mp3">Song 5</li>
+	        </ul>
+	    </div>
+	    <script src="js/player.js"></script>
+	        
+</section>
 
-    <div id="player">
+
+	<!-- Player code here-->
+
         <h2>Now Playing</h2>
         <hr>
         <div id="album-art" style="text-align: center;"><img src="data/images/cover 1.png" width="200px"></div>
         <h3 id="title">Track Title</h3>
-        <audio id="audio" controls></audio>
+        <audio id="audioPlayer" controls></audio>
 
         <h2>Playlist</h2>
         <ul id="playlist"></ul>
@@ -70,7 +73,7 @@ TRACKS <br>
 
    <script>
         // Add your JavaScript here
-  var audio = document.getElementById('audio');
+  var audio = document.getElementById('audioPlayer');
   var albumArt = document.getElementById('album-art');
   var playlist = document.getElementById('playlist');
   var musicIndex = 0;
