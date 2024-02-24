@@ -72,6 +72,9 @@ body {
     list-style-type: none;
     padding: 0;
     background-color: grey;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 #trending_tracks li {
     padding: 10px;
