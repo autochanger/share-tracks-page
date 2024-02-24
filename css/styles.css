@@ -71,6 +71,11 @@ body {
 }
 
 /* add-on css */
+ #trending_tracks {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
  audio {
             width: 300px;
             margin-top: 20px;
