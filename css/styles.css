@@ -91,7 +91,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    max-width:100%;
 }
+
 
 /* nav bar css here */
 
