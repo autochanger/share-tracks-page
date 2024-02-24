@@ -91,7 +91,9 @@ body {
 
 /*addon css*/
 .add-on {
-    display:relative;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
