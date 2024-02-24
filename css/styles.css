@@ -92,13 +92,7 @@ body {
 
 audio::-webkit-media-controls-play-button{
   background-color:green;
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  height: 0;
-  width: 0;
-  border: 7px solid #0000;
-  border-left: 13px solid white;} 
+}
 
 
 
