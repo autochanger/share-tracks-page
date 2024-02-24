@@ -87,7 +87,7 @@ body {
  audio {
   width: 300px;
   margin-top: 20px;
-  background: #444;
+  color: #444;
  }
 
 audio::-webkit-media-controls-play-button{
