@@ -71,17 +71,17 @@ body {
 #trending_tracks {
     list-style-type: none;
     padding: 0;
-    background-color: grey;
-        display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: grey;       
 }
 #trending_tracks li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 #trending_tracks li:hover {
-    background-color: #f0f0f0;
+    background-color: blue;
     cursor: pointer;
 }
  audio {
