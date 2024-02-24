@@ -87,12 +87,7 @@ body {
  audio {
   width: 300px;
   margin-top: 20px;
-  height: 50px;
   background: #444;
-  box-shadow: 0 0 20px 0 #000a;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 6px auto;
  }
 
 audio::-webkit-media-controls-play-button{
