@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-  /*  margin:; and others can later be modified if need be */
+    margin:; 
     padding: 0;
-    display: flex;
-    justify-content: center;
+    display: flex-block;
+    justify-content:center ;
     align-items: center;
     height: 100vh;
     max-width:100%;
     
 }
+
+.trending{}
 
 #player {
     width: 300px;
