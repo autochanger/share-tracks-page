@@ -20,18 +20,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+
+    </style>
+
 <!-- Link to JavaScript file -->
 
 </head>
-<body style="background-image: url('data/images/bck.png');
+<body style="background-image: url('data/images/bck2.jpeg');
              background-repeat: no-repeat;
              background-attachment: fixed;
              background-size: cover;">
-  
+
 <div style=
 "text-align:center;
 padding-right:;font-size:;">
 <p></p></div>
+
     <h1 style="color:lightgrey;
 	        opacity: 0.5; /* Opacity ranges from 0.0 (completely transparent) to 1.0 (completely opaque) */
 	    ">SHARE YOUR <br>
@@ -40,7 +45,9 @@ padding-right:;font-size:;">
 	<span style="font-family:roboto;color:lightblue;opacity: 0.5;"> FRIENDS </span></h1>
 
 
-<div id="player">	
+<div class="container">
+
+    <div id="player" class="" style="margin-top:0px;max-width:100%;" >	
 	<!-- Player code here-->
         <h2>Now Playing</h2>
         <hr>
@@ -56,21 +63,81 @@ padding-right:;font-size:;">
         <h2>Playlist</h2>
         <ul id="playlist"></ul>
 
+		           
+  </div>
 
-	
-	            <h1>Trending tracks</h1>
+
+  <section 
+	style="text-align:center;margin-left:5px;margin-top:5px;display:block;max-width:300px;
+    	background-color: #fff;
+    	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    	padding: 20px;">	
+ 
+	 <h1>Trending tracks</h1>
 		    <ul id="trending_tracks">
 	            <li class="song" data-src="data/musics/song 3.mp3" title='Bellair (Dollar$)'>Bellair (Dollar$)</li>
 	            <li class="song" data-src="data/musics/song 4.mp3" title='Electromix'>Electromix</li>
 	            <li class="song" data-src="data/musics/song 5.mp3" title="Emotions'>Emotions</li>
 		    <li class="song" data-src="data/musics/song 6.mp3" title='Indica'>Indica</li>
 	            <li class="song" data-src="data/musics/song 7.mp3" title='Money'>Money</li>
+		   
 	        </ul>
-</div>
-	
-<section class="">	        
-</section>
 
+  <div 
+	style="text-align:center;margin-left:20px;margin:5px;display:block;max-width:300px;
+    	background-color: #fff;
+    	padding: 50px;">	 
+	 <h1>Recently added <img src="data/images/bck2.jpeg" width="200px"></h1>
+		    <ul id="trending_tracks">
+	     
+		    <li class="song" data-src="data/musics/song 11.mp3" title='Je parle en relenti' style="text-align:center;"><span style="color:darkgreen;">New</span>Je parle en relenti</li>
+		    <li class="song" data-src="data/musics/song 12.mp3" title='Why the hatin'>Why the hatin</li>
+		    <li class="song" data-src="data/musics/song 13.mp3" title='Pour another one'>Pour another one</li>
+		    <li class="song" data-src="data/musics/song 14.mp3" title='Eyes open'>Eyes open</li>
+		    <li class="song" data-src="data/musics/song 15.mp3" title='Into the beat'>Into the beat</li>
+  		    <li class="song" data-src="data/musics/song 16.mp3" title='Kin'>Kin</li>
+		    <li class="song" data-src="data/musics/song 17.mp3" title='Piano trap'>Piano trap</li>
+		    <li class="song" data-src="data/musics/song 18.mp3" title='Money coming'>Money coming(MC)</li>
+		    <li class="song" data-src="data/musics/song 19.mp3" title='Party'>Party</li>
+  		    <li class="song" data-src="data/musics/song 20.mp3" title='On est bien ft Asap Karlo'>On est bien ft Asap Karlo</li>
+ 		    <li class="song" data-src="data/musics/song 21.mp3" title='Mon ami sakha'>Mon ami sakha</li>
+		    <li class="song" data-src="data/musics/song 22.mp3" title='Mon ami sakha'>I can't control it</li>
+ 		    <li class="song" data-src="data/musics/song 23.mp3" title='Mon ami sakha'>Alchemy</li>
+		    <li class="song" data-src="data/musics/song 24.mp3" title='Je suis avancer'>Je suis avancer</li>
+	        </ul>     
+   </div>
+         
+  </section>
+
+  <section 
+	style="text-align:center;margin-left:5px;margin-top:5px;display:block;max-width:300px;
+    	background-color: #fff;
+    	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    	padding: 50px;">	
+ 
+	 <h1>Discover<img src="data/images/bck3.png" width="200px"></h1>
+		    <ul id="trending_tracks">
+	            <li class="song" data-src="data/musics/others/1.mp3" title='Emphasis'>Emphasis</li>
+	            <li class="song" data-src="data/musics/others/2.mp3" title='Piano vibe'>Piano vibe</li>
+	            <li class="song" data-src="data/musics/others/3.mp3" title="Pressure pulse'>Pressure pulse</li>
+		    <li class="song" data-src="data/musics/others/4.mp3" title='Stressed out'>Stressed out</li>
+	            <li class="song" data-src="data/musics/others/5.mp3" title='Pretty Beat'>Pretty beat</li>
+		    <li class="song" data-src="data/musics/others/6.mp3" title='Stay alive'>Stay alive</li>
+		    <li class="song" data-src="data/musics/others/7.mp3" title='Pretty Beat (electro remix)'>Pretty beat remix</li>
+    	  	    <li class="song" data-src="data/musics/others/8.mp3" title='Midnight blues'>Midnight blues</li>
+		    <li class="song" data-src="data/musics/others/9.mp3" title='Count on me'>Count on me</li>
+<h2>Gospel tracks <img src="data/images/bck4.jpg" width="200px"></h2>
+  		    <li class="song" data-src="data/musics/others/10.mp3" title='God is my strenght'>God is my strenght</li>
+		    <li class="song" data-src="data/musics/others/11.mp3" title='Show me the way'>Show me the way</li>
+<h3>Rock tracks<img src="data/images/bck7.jpeg" width="200px"></h3>
+		    <li class="song" data-src="data/musics/others/12.mp3" title='Overoading road'>Overoading road</li>
+		    <li class="song" data-src="data/musics/others/13.mp3" title='Pressure'>Pressure</li>	
+
+	        </ul>
+		</section>
+
+
+</div>
 
 
    <script src="js/player.js"></script>
